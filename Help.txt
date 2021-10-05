@@ -1,0 +1,73 @@
+CSS Buttons: https://www.w3schools.com/css/css3_buttons.asp
+CSS Gradients: https://www.w3schools.com/csS/css3_gradients.asp
+CSS Styling Tables: https://www.w3schools.com/css/css_table.asp
+Imagen llave: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FbbxJRT_dibujo-de-llave-para-colorear-ultra-coloring-pages%2F&psig=AOvVaw1ye6YXqwm28tUehjSpqntq&ust=1588971860439000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiXgvLToukCFQAAAAAdAAAAABAK
+Redirigir a página con un botón: https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page
+Redirigr a página con un botón función js: https://www.w3schools.com/js/tryit.asp?filename=tryjs_iframe_src2
+Centrar tabla: https://www.computerhope.com/issues/ch001968.htm
+Centrar en pantalla: https://stackoverflow.com/questions/11093603/how-to-set-page-content-to-the-middle-of-screen
+Conseguir index de combobox: https://www.w3schools.com/jsref/prop_select_selectedindex.asp
+Cambiar textbox con js: https://stackoverflow.com/questions/3883673/change-textbox-text-in-javascript?rq=1
+Quitar decimales: https://www.w3schools.com/jsref/jsref_tofixed.asp
+ParseInt: https://stackoverflow.com/questions/26308704/javascript-cannot-add-2-numbers-correctly
+Llenar tabla: https://www.w3schools.com/jsref/met_table_insertrow.asp
+Llenar tabla 2: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_table_insertrow
+Validación js: https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_js
+Validación 2: https://www.w3schools.com/js/js_validation.asp
+
+Código "desechado", no funciona.
+function agregarProducto(SLiquido){
+  var RUT = $("#txtRUT").val();
+  var Nombre = $("#txtNombre").val();
+  var Direccion = $("#txtDireccion").val();
+  var Cargo = $("#txtCargo").val();
+  var Dpto = $("#txtDpto").val();
+  var SBase = $("#txtSBase").val();
+  var Bono = $("#txtBono").val();
+  var Aguinaldo = $("#txtAguinaldo").val();
+  var Gratificacion = $("#txtGratificacion").val();
+  var DctoAFP = $("#txtDctoAFP").val();
+  var Anticipo = $("#txtAnticipo").val();
+  var NHextras = $("#txtNHextras").val();
+  var PagoHrsExtra = $("#txtPagoHrsExtra").val();
+
+  $("#tablaSueldos").append("<tr><td>"+RUT+"</td><td>"+Nombre+"</td><td>"+Direccion+"</td><td>"+Cargo+"</td><td>"+Dpto+"</td><td>"+AFPSelec+
+  "</td><td>"+SBase+"</td></td>"+"</td><td>"+Bono+"</td><td>"+"</td><td>"+Aguinaldo+"</td><td>"+"</td><td>"+Gratificacion+"</td><td>"+
+  "</td><td>"+DctoAFP+"</td><td>"+"</td><td>"+Anticipo+"</td><td>"+"</td><td>"+NHextras+"</td><td>"+"</td><td>"+PagoHrsExtra+"</td><td>"+
+  "</td><td>"+SLiquido+"</td><tr>");
+  
+}
+
+/*
++Nombre+"</td><td>"+Dirección+"</td><td>"+Cargo+"</td><td>"+Dpto+"</td><td>"+AFPSelec+
+    "</td><td>"+SBase+"</td></tr>"+"</td><td>"+Bono+"</td><td>"+"</td><td>"+Aguinaldo+"</td><td>"+"</td><td>"+Gratificacion+"</td><td>"+
+    "</td><td>"+DctoAFP+"</td><td>"+"</td><td>"+Anticipo+"</td><td>"+"</td><td>"+NHextras+"</td><td>"+"</td><td>"+PagoHrsExtra+"</td><td>"+
+    "</td><td>"+SLiquido+"</td><td>");	
+*/
+
+
+GRACIAS POR TANTO W3SCHOOLS!! (Esta es la magia para mostrar las cosas)
+function mostrarProducto(){
+  var table = document.getElementById("tablaSueldoss");
+  var row = table.insertRow(1);
+    var campo1 = row.insertCell(0);
+    var campo2 = row.insertCell(1);
+    var campo3 = row.insertCell(2);
+    var campo4 = row.insertCell(3);
+    var campo5 = row.insertCell(4);
+    var campo6 = row.insertCell(5);
+    var campo7 = row.insertCell(6);
+    var campo8 = row.insertCell(7);
+    var campo9 = row.insertCell(8);
+    var campo10 = row.insertCell(9);
+    var campo11 = row.insertCell(10);
+    var campo12 = row.insertCell(11);
+    var campo13 = row.insertCell(12);
+    var campo14 = row.insertCell(13);
+  campo1.innerHTML = "NEW CELL1";
+  campo2.innerHTML = "NEW CELL2";
+  campo3.innerHTML = "NEW CELL3";
+}
+
+En total fueron 894 líneas de código xD
+Help.

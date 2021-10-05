@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='Estilo.css'>
+    <script type="text/javascript" src="script.js" ></script>
+    <title>Sueldos</title>
+</head>
+<body>
+  <div>
+      <table class="tablalogin" style="width:400px;margin-left:auto;margin-right:auto;">
+        <tr>
+          <td class="center tablatitulos2"><b>ITEM</b></td>
+          <td class="center tablatitulos2"><b>INGRESO</b></td>
+          <td class="center tablatitulos2"><b>ITEM</b></td>
+          <td class="center tablatitulos2"><b>INGRESO</b></td>
+        </tr>
+        <tr>
+          <td class="tablacampos">RUT</td>
+          <td class="tablacampos"> <input type="text" id='txtRut' required> </td>
+          <td class="tablacampos">Cargo</td>
+          <td class="tablacampos"> <input type="text" id='txtCargo' required> </td>
+        </tr>
+        <tr>
+          <td class="tablacampos">Nombre</td>
+          <td class="tablacampos"> <input type="text" id='txtNombre' required> </td>
+          <td class="tablacampos">Dpto</td>
+          <td class="tablacampos"> 
+            <select name="txtDpto" id="txtDpto" required>
+                <option></option>
+                <option>Dpto 1</option>
+                <option>Dpto 2</option>
+                <option>Dpto 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="tablacampos">Dirección</td>
+          <td class="tablacampos"> <input type="text" id='txtDireccion' required> </td>
+          <td class="tablacampos">AFP</td>
+          <td class="tablacampos">
+            <select name="txtAFP" id="txtAFP" required>
+                <option>Seleccione</option>
+                <option>Habitat (10% dcto)</option>
+                <option>Cuprum  (15% dcto)</option>
+                <option>Provida (20% dcto)</option>
+            </select>
+          </td>
+        </tr>
+      </table> <br> <br>
+      <table class="tablalogin" style="width:400px;margin-left:auto;margin-right:auto;">
+        <tr>
+          <td class="center tablatitulos2"><b>ITEM</b></td>
+          <td class="center tablatitulos2"><b>INGRESO</b></td>
+          <td class="center tablatitulos2"><b>ITEM</b></td>
+          <td class="center tablatitulos2"><b>INGRESO</b></td>
+        </tr>
+        <tr>
+          <td class="tablacampos">SBase</td>
+          <td class="tablacampos"> <input type="number" min="0" id='txtSBase' required> </td>
+          <td class="tablacampos">Bono</td>
+          <td class="tablacampos"> <input type="text" id='txtBono' disabled> </td>
+        </tr>
+        <tr>
+          <td class="tablacampos">Aguinaldo</td>
+          <td class="tablacampos"> <input type="text" id='txtAguinaldo' disabled> </td>
+          <td class="tablacampos">Gratificacion</td>
+          <td class="tablacampos"> <input type="text" id='txtGratificacion' disabled> </td>
+        </tr>
+        <tr>
+          <td class="tablacampos">Dcto AFP</td>
+          <td class="tablacampos"> <input type="text" id='txtDctoAFP' disabled> </td>
+          <td class="tablacampos">Anticipo</td>
+          <td class="tablacampos"> <input type="number" min="0" id='txtAnticipo' required> </td>
+        </tr>
+        <tr>
+          <td class="tablacampos">N° Horas Extras</td>
+          <td class="tablacampos">
+            <select name="txtNHextras" id="txtNHextras" required>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+            </select>
+          </td>
+          <td class="tablacampos">Pago Hrs Extra</td>
+          <td class="tablacampos"> <input type="text" id='txtPagoHrsExtra' disabled> </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" class='botoneslogin' style="margin-left: 40%;" id="calcularSueldo" onclick="validarForm()" value="Calcular sueldo">
+          </td>
+          <td colspan="2">
+            <input type="reset" class='botoneslogin' style="margin-left: 40%;" id="calcularSueldo" onclick="limpiarCamposS()" value="Limpiar campos">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+              <p id='sueldoliquido' class="sueldoliquido">Sueldo líquido: ???????</p>
+          </td>
+        </tr>
+      </table> <br>
+      <table class="tituloCSueldos" style="width:600px;margin-left:auto;margin-right:auto;" >
+        <tr>
+            <td><b>LISTADO DE SUELDO DE LOS TRABAJADORES</b></td>
+        </tr>
+    </table> <br>
+      <table class="tablalogin" id="tablaSueldoss" style="width:1190px;margin-left:auto;margin-right:auto;">
+        <tr>
+          <td class="center tablatitulos2"><b>RUT</b></td>
+          <td class="center tablatitulos2"><b>Nombre</b></td>
+          <td class="center tablatitulos2"><b>Dirección</b></td>
+          <td class="center tablatitulos2"><b>Cargo</b></td>
+          <td class="center tablatitulos2"><b>Dpto</b></td>
+          <td class="center tablatitulos2"><b>AFP</b></td>
+          <td class="center tablatitulos2"><b>SBase</b></td>
+          <td class="center tablatitulos2"><b>Bono</b></td>
+          <td class="center tablatitulos2"><b>Aguinaldo</b></td>
+          <td class="center tablatitulos2"><b>Gratificación</b></td>
+          <td class="center tablatitulos2"><b>Dcto. AFP</b></td>
+          <td class="center tablatitulos2"><b>Anticipo</b></td>
+          <td class="center tablatitulos2"><b>Hrs. Extra</b></td>
+          <td class="center tablatitulos2"><b>Pago Hrs. Extra</b></td>
+          <td class="center tablatitulos2"><b>SLiquido</b></td>
+          <!-- 15 Campos - del 0 al 14 -->
+        </tr>
+      </table>
+  </div>
+</body>
+</html>

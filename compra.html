@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='Estilo.css'>
+    <script type="text/javascript" src="script.js" ></script>
+    <title>Compra</title>
+</head>
+<body>
+    <table class="tablaReg" style="width:300px;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td class="center tdR bordetr fondogris">RUT Cliente</td>
+            <td class="center tdR bordetr"> <input type="text" id="txtRUTCliente"> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">Producto</td>
+            <td class="center tdR bordetr"> <input type="text" id="txtProducto"> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">Cantidad</td>
+            <td class="center tdR bordetr"> <input type="number" min="1" value="1" id="txtCantidad"> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">Valor Unitario</td>
+            <td class="center tdR bordetr">  <input type="number" min="0" id="txtVUnitario"> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">Valor Total</td>
+            <td class="center tdR bordetr"> <input type="text" id="txtVTotal" disabled> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">IVA 19%</td>
+            <td class="center tdR bordetr"> <input type="text" id="txtIVA" disabled> </td>
+        </tr>
+        <tr>
+            <td class="center tdR bordetr fondogris">Valor a pagar</td>
+            <td class="center tdR bordetr"> <input type="text" id="txtValorPagar" disabled> </td>
+        </tr>
+    </table>
+    <table class="tablaReg" style="width:200px;margin-left:auto;margin-right:auto;">
+        <tr class="bordetrRojo">
+            <td class="center tdR bordeder"> << </td>
+            <td class="center tdR bordeder"> <input type="button" class="botoneslogin" name="" id="" onclick="validarDCompra()" value="Enviar"> </td>
+            <td class="center tdR bordeder"> <input type="button" class="botoneslogin" name="" id="" onclick="limpiarCamposC()" value="Otro Ingreso"> </td>
+            <td class="center tdR "> >> </td>
+        </tr>
+    </table> <br> <br>
+    <table class="tituloCProductos" style="width:300px;margin-left:auto;margin-right:auto;" >
+        <tr>
+            <td><b>LISTADO COMPRA DE PRODUCTOS</b></td>
+        </tr>
+    </table> <br>
+    <table class="tablalogin" id="tablaCompra" style="width:800px;margin-left:auto;margin-right:auto;">
+        <tr>
+            <td class="center tdR bordetr fondogris">RUT Cliente</td>
+            <td class="center tdR bordetr fondogris">Producto</td>
+            <td class="center tdR bordetr fondogris">Cantidad</td>
+            <td class="center tdR bordetr fondogris">Valor Unitario</td>
+            <td class="center tdR bordetr fondogris">Valor Total</td>
+            <td class="center tdR bordetr fondogris">IVA 19%</td>
+            <td class="center tdR bordetr fondogris">Total Pagar</td>
+            <!-- 7 campos - del 0 al 6 -->
+        </tr>
+    </table>
+</body>
+</html>

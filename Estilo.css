@@ -1,0 +1,180 @@
+/*Alineación de textos*/
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+tr{
+    text-align: center;
+}
+
+/*Borde y fuentes de la tabla*/
+.tablalogin, th{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloCProductos{
+    border: 3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    color: red;
+}
+
+.tituloCSueldos{
+    border: 3px solid blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    color: blue;
+}
+
+.tablaReg, th{
+    border: 2px solid rgb(94, 90, 90);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tdR{
+    padding: 7px;
+}
+
+.bordetr{
+    border: 2px solid rgb(94, 90, 90);
+}
+
+.bordeder{
+    border-right: 2px solid rgb(94, 90, 90);
+}
+
+.bordetrRojo{
+    border: 2px solid rgb(194, 53, 53);
+    background-color: rgb(179, 171, 171);
+}
+
+/*Fondo campos tabla*/
+.fondogris{
+    background-color: rgb(179, 171, 171);
+}
+
+/*Centrar en pantalla*/
+.centpantalla{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+/*Centrar en horizontal solamente.*/
+.centhori{
+    align-self: center;
+}
+
+/*Estilo para las dos primeras "filas" de la tabla, que en realidad son un header
+y un td con colspan de 2*/
+.tablatitulos{
+    background-image: linear-gradient(to right, white , gray);
+    color: rgb(170, 12, 12);
+}
+
+.tablatitulos2{
+    background-color: rgb(144, 194, 238);
+    color: rgb(170, 12, 12);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Campo en el que se encuentran Nombre de usuario, Contraseña, Tipo de usuario*/
+.tablacampos{
+    background-color: rgb(196, 192, 192);
+    text-align: right;
+    padding: 7px;
+}
+
+/*Campos en los que se encuentran los botones de iniciar sesión y registrarse
+y las iniciales 'D.A.B'*/
+.tablaabajo{
+    background-color: rgb(196, 192, 192);
+}
+
+/*CSS iframe*/
+.iframeMP{
+    height: 890px;
+    width: 1200px;
+    padding: -10px;
+    margin: auto;
+}
+
+/* Medidas y estilo en general del select, text y password del login.*/
+select{
+    width: 136px;
+}
+
+.selectlogin{
+    width: 138px;
+}
+
+input[type=text]{
+    width: 130px;
+}
+
+input[type=password]{
+    width: 130px;
+}
+
+input[type=number]{
+    width: 130px;
+}
+
+.botonesmenuprincipal{
+    width: 140px;
+    border: 1px solid orange;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 190, 139);
+}
+
+.botonesmenuprincipal:hover{
+    background-color: rgb(41, 194, 53);
+}
+
+/* Botones del login */
+.botoneslogin{
+    color: rgb(170, 12, 12);
+}
+
+.botoneslogin:hover{
+    background-color: cornflowerblue;
+}
+
+/* Especificos tabla sueldos */
+.sueldoliquido{
+    color: rgb(170, 12, 12);
+    text-align: center;
+}
+
+/*Ocultar spinner de input type number*/
+/*No funcionó. Pero es algo para ver en otro momento, no es vital ahora mismo*/
+
+/*Pantalla Autor*/
+
+.divAutor{
+    background-color: rgb(101, 226, 226);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 100px;
+}
+
+/*Color texto*/
+.rojo{
+    color: red;
+}

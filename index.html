@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='Estilo.css'>
+    <script type="text/javascript" src="script.js" ></script>
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <table class="tablalogin centpantalla" style="width:400px">
+        <tr>
+          <th colspan="2" class="center tablatitulos">Programación Avanzada Asp.Net</th>
+        </tr>
+        <tr>
+          <td colspan="2" class="center tablatitulos"><b>2020</b></td>
+        </tr>
+        <tr>
+          <td class="tablacampos">
+            <label>Nombre de usuario:</label>
+            <input type="text" name="txtNomUsuario" id="txtNomUsuario" required> <br>
+            <label>Contraseña:</label>
+            <input type="password" name="txtPassUsuario" id="txtPassUsuario" required> <br>
+            <label>Tipo de usuario:</label>
+            <select name="txtTipoUsuario" class="selectlogin" required>
+                <option></option>
+                <option>Cliente</option>
+                <option>Administrador</option>
+            </select>
+          </td>
+          <td class="tablacampos">
+            <img src="img/llaves.png" width='80px' height="80px" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td colspan='2' class="center tablaabajo">
+            <input type="submit" class='botoneslogin' onclick="location.href = 'menuprincipal.html';" value="Iniciar sesión" id="btnLogin">
+            <input type="button" class='botoneslogin' value="Registrarse" onclick="enConstruccion()" id="btnRegistro">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="right tablaabajo">D.A.B</td>
+        </tr>
+      </table> 
+</body>
+</html>

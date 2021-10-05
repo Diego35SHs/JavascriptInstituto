@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='Estilo.css'>
+    <script type="text/javascript" src="script.js" ></script>
+    <title>Menú principal</title>
+</head>
+<body>
+    <div>
+      <table class="tablalogin" style="width:600px;height:600px;margin-left:auto;margin-right:auto;">
+        <tr>
+          <th colspan="2" class="center tablatitulos">Control N°1 Progra. Avanzada Asp.Net</th>
+        </tr>
+        <!-- Ciclo FOR debe poblar la tabla con estos TR -->
+        <tr>
+          <td colspan="2" class="center tablatitulos">
+              
+              <input class="botonesmenuprincipal" type="button" value="Sueldos"      onclick="cambiarIframe('sueldos.html')"     target="iframe_a" >
+              <input class="botonesmenuprincipal" type="button" value="Listado Foto" onclick="cambiarIframe('listado.html')"     target="iframe_a">
+              <input class="botonesmenuprincipal" type="button" value="Compra Producto" onclick="cambiarIframe('compra.html')"     target="iframe_a"> 
+              <input class="botonesmenuprincipal" type="button" value="Autor"        onclick="cambiarIframe('autor.html')"       target="iframe_a">
+              <input class="botonesmenuprincipal" type="button" value="Ayuda"        onclick="enConstruccion()"       target="iframe_a">
+              <input class="botonesmenuprincipal" type="button" value="Registrarse"  onclick="enConstruccion()" target="iframe_a">
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe class="iframeMP" src="sueldos.html"  name="iframe_a" id="iframeMP"></iframe>
+          </td>
+        </tr>
+      </table> 
+    </div>
+</body>
+</html>
